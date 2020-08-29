@@ -6,7 +6,7 @@ import "./App.css";
 class App extends React.Component {
   state = {
     isLoading: true,
-    movie: [],
+    movies: [],
   };
   getMovie = async () => {
     const {
@@ -17,6 +17,7 @@ class App extends React.Component {
       "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
     );
     this.setState({ movies, isLoading: false });
+    console.log(movies);
   };
   componentDidMount() {
     this.getMovie();
@@ -26,11 +27,11 @@ class App extends React.Component {
     return (
       <section className="container">
         {isLoading ? (
-          <div class="loader">
+          <div className="loader">
             <span className="loader_text">Loading...</span>
           </div>
         ) : (
-          <div class="movies">
+          <div className="movies">
             {movies.map((movie) => (
               <Movie
                 key={movie.id}
@@ -38,7 +39,8 @@ class App extends React.Component {
                 year={movie.year}
                 title={movie.title}
                 summary={movie.summary}
-                poster={movie.poster}
+                poster={movie.medium_cover_image}
+                genres={movie.genres}
               />
             ))}
           </div>
