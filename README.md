@@ -12,6 +12,7 @@
    "predeploy": "npm run build"
    },
    "homepage": "https://minsungchu.github.io/movie-app-2019"
+4. publish update : npm run deploy
 
 # React Hook
 
@@ -26,6 +27,7 @@
 3. React Native - weather app
 
 # Router
+
 npm install react-router-dom
 HashRouter : github에서 사용하기 쉽다.
 BrowserRouter : github에서 사용하기 까다롭다.
