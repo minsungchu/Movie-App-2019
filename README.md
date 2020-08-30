@@ -30,3 +30,5 @@ npm install react-router-dom
 HashRouter : github에서 사용하기 쉽다.
 BrowserRouter : github에서 사용하기 까다롭다.
 Route : /home과 /home/information을 라우팅하면 두개 모두 렌더링된다. 이것을 원하지 않으면 exact={true}를 추가하여, 정확히 매칭되는 url만 랜더링 되도록 한다.
+
+reacttraining.com/react-router/web/api/Link/to-object
