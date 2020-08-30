@@ -24,3 +24,6 @@
 1. React Hook
 2. React JS Class - advanced movie app
 3. React Native - weather app
+
+# Router
+npm install react-router-dom
